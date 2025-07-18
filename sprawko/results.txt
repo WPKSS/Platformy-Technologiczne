@@ -1,0 +1,45 @@
+Dysk w ThinkPadzie:
+1thread: 149.83
+2thread: 110.02
+4thread: 108.61
+8thread: 102.38
+16thread: 112.52
+32thread: 124.47
+64thread: 139.83
+128thread: 135.01
+256thread: 138.10
+
+Dysk NVMe:
+1thread: 36.14
+2thread: 19.00
+4thread: 11.07
+8thread: 7.19
+16thread: 6.00
+32thread: 6.06
+64thread: 6.08
+128thread: 6.15
+256thread: 6.35
+
+
+Pendrive 3.2:
+1thread: 39.68
+2thread: 25.27
+4thread: 25.33
+8thread: 22.57
+16thread: 23.57
+32thread: 22.46
+64thread: 22.72
+128thread: 25.15
+256thread: 24.03
+
+Pendrive 2.0:
+1thread: 87.22
+2thread: 66.68
+4thread: 58.99
+8thread: 54.05
+16thread: 57.74
+32thhread: 63.22
+64thread: 66.49
+128thread: 66.63
+256thread: 67.44
+

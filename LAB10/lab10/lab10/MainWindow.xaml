@@ -1,0 +1,29 @@
+﻿<Window x:Class="lab10.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab10"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="163*"/>
+            <ColumnDefinition Width="611*"/>
+            <ColumnDefinition Width="26*"/>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Row="0" Grid.Column="1" Content="Zmień" Margin="498,29,24,364" Click="Change_Threads_Click" RenderTransformOrigin="-1.025,0.505"/>
+        <TextBlock TextWrapping="Wrap" Text="Aktualna ilość używanych wątków: " Margin="0,0,514,342" FontSize="24" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="ThreadCountText" Margin="94,14,383,367" RenderTransformOrigin="0.5,0.5" FontSize="24" Grid.Column="1"/>
+        <TextBlock Margin="0,67,565,310" Text="Ścieżka: " FontSize="24" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="PathText" Margin="104,76,450,319" Grid.ColumnSpan="2"/>
+        <Button Margin="-3,97,575,296" Content="Zmień ścieżkę" Click="Change_Path_Click" Grid.ColumnSpan="2"/>
+        <TextBox x:Name ="ThreadBox" TextWrapping="Wrap" Margin="426,29,126,367" Grid.Column="1"/>
+        <TextBlock TextWrapping="Wrap" Text="Zmień ilość wątków:" FontSize="16" Margin="264,26,182,367" Grid.Column="1"/>
+        <Button Content="ROZPOCZNIJ" HorizontalAlignment="Left" Margin="98,325,0,0" VerticalAlignment="Top" Width="608" Height="53" Click="Begin_Search_Click" Grid.ColumnSpan="2"/>
+        <ProgressBar x:Name="progressBar" HorizontalAlignment="Left" Height="28" Margin="20,383,0,0" VerticalAlignment="Top" Width="754" Grid.ColumnSpan="2"/>
+        <TextBox Name="LogTextBox" IsReadOnly="True" VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" AcceptsReturn="True" Margin="20,143,10,120" Grid.ColumnSpan="2"/>
+        <Button Content="STOP" Margin="305,76,186,304" Grid.Column="1" Click="Stop_Click"/>
+
+    </Grid>
+</Window>
